@@ -23,7 +23,7 @@ module Devise
 
         if params[:admin]
           @ldap.auth ldap_config["admin_user"], ldap_config["admin_password"]
-          @ldap.bin
+          @ldap.bind
         end
 
         @login = params[:login]
